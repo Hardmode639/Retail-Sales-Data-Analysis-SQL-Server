@@ -1,5 +1,12 @@
 #  Retail Sales Data Analysis | SQL Server
-A SQL-based analysis of retail sales transaction data covering data cleaning, KPI reporting, and advanced analytics using T-SQL.<br><br> Key Features<br>- **Data Cleaning:** NULL handling via mean imputation, duplicate removal (ROW_NUMBER), gender standardization, outlier correction for invalid ages<br>- **Core KPIs:** Total Sales, Total Profit, Average Shipping Cost, Total Orders, Total Customers<br>- **Order Analysis:** Cancellation rate, delivered vs. cancelled revenue %, order status breakdown<br>- **Product & Category Insights:** Top 5 products by revenue, category-wise revenue %, top product per category (DENSE_RANK)<br>- **Customer Analytics:** Age-group and gender-based segmentation, top customers by spend, Pareto (80/20) revenue analysis<br>- **Time-Series Analysis:** Month-over-Month growth % using LAG(), running/cumulative totals<br>- **Text Processing:** First/last name extraction using string functions<br><br> Tools & Skills<br>SQL Server, T-SQL, Window Functions (RANK, DENSE_RANK, LAG, LEAD), CTEs, Data Cleaning, Aggregate Functions, Query Optimization, Transaction Control
+* **Performed end-to-end data cleaning:** Handled NULL values in age, quantity, days-to-ship, and customer satisfaction using AVG imputation; removed duplicate customer records using the `ROW_NUMBER()` window function; and standardized inconsistent gender entries (M/male/F/female) using `CASE` logic.
+* **Calculated core KPIs:** Analyzed Total Sales, Total Profit, Average Shipping Cost, Total Orders, and Total Customers using conditional aggregation with `SUM()` and `COUNT()` alongside `CASE WHEN`.
+* **Analyzed order fulfillment performance:** Computed cancellation rate, delivered-order revenue percentage, and revenue loss from cancelled orders.
+* **Performed customer segmentation:** Grouped customers by age (Minor, Teen, Youngster, Middle-age, Senior) and gender to analyze revenue distribution across demographics.
+* **Implemented Pareto (80/20) analysis:** Used cumulative `SUM()` window functions to identify high-value customers contributing to the majority of revenue.
+
+
+
 
 
 ## 🌐 Socials:
